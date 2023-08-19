@@ -1,0 +1,13 @@
+<nav class="nav">
+    <div class="image_block">
+        <img alt="image" src="/assets/logo.jpg" />
+    </div>
+    <div class="navigation_link">
+        <div *ngIf="getIsFlag()" class="btn_login">
+            <a routerLink="/authorization" (click)="removeLocalStorage()">Выйти</a>
+        </div>
+        <div class="name">
+            <p>{{getName()}}</p>
+        </div>
+    </div>
+</nav>

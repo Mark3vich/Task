@@ -1,0 +1,7 @@
+<div class="wrapper" *ngFor="let post of postsData">
+    <a routerLink="{{post.id}}">
+        <p class="id">{{post.id}}</p>
+        <p class="title">{{post.title}}</p>
+        <p class="body">{{post.body}}</p>
+    </a>
+</div>
