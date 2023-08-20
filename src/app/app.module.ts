@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { PostsService } from './shared/services/posts.service';
 import { HeaderActiveService } from './shared/services/headerActive.service';
+import { AuthGuardService } from './shared/services/authGuard.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { HeaderActiveService } from './shared/services/headerActive.service';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [PostsService, HeaderActiveService],
+  providers: [PostsService, HeaderActiveService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

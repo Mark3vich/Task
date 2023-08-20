@@ -9,7 +9,6 @@ export class HeaderActiveService {
     }
 
     public getStateHeader():boolean {
-        
         return this.isActiveHeader;
     }
 }   

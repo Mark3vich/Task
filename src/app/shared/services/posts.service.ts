@@ -6,7 +6,7 @@ export class PostsService {
     constructor(private http: HttpClient) {}
 
     public getPosts() {
-        let url = "https://jsonplaceholder.typicode.com/posts"; 
+        let url = "https://jsonplaceholder.typicode.com/posts"; // вынести в .env файл
         return this.http.get(url);
     }
 
